@@ -1,0 +1,203 @@
+﻿<html lang="tr" id="html_style">
+<head>
+<meta charset="UTF-8">
+
+<meta name="viewport" content="user-scalable=no, width=device-width">
+<title>Cortex Duo</title>
+<link rel="stylesheet" href="duo/style.css">
+<link rel="stylesheet" href="duo/search.css">
+<link rel="stylesheet" href="duo/etc/settings/style.css">
+<link rel="stylesheet" href="css?family=M+PLUS+2">
+<link cache-control="max-age=31536000" href="images/cortexdaire.png" rel="icon" type="image/x-icon">
+<link rel="icon" cache-control="max-age=31536000" href="images/cortexdaire.png" type="image/x-icon">
+<script type="7a0f7818e12213d2fbcaf56b-text/javascript" src="ajax/libs/jquery/1.5/jquery.min.js"></script>
+<script src="834bc69351.js" crossorigin="anonymous" type="7a0f7818e12213d2fbcaf56b-text/javascript"></script>
+<script type="7a0f7818e12213d2fbcaf56b-text/javascript" src="translate_a/element.js?cb=googleTranslateElementInit"></script>
+<script type="7a0f7818e12213d2fbcaf56b-text/javascript">
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement(
+        {
+          pageLanguage: 'tr',
+          gaTrack: true,
+        },
+        'google_translate_element'
+      );
+    }
+    let dataX = 0;
+
+    let dataY = setInterval(async function(){
+    try {
+    if(dataX > 25) {
+    if(!dataY) return;
+    clearInterval(dataY);
+    dataY = false;
+    //let xy = document.querySelector("#google_translate_element > div").innerHTML
+    //document.querySelector("#google_translate_element > div").innerHTML = xy.replace("tarafından desteklenmektedir", "")
+    }
+    let x = document.querySelector("#google_translate_element > div > span")
+    x.remove()
+    document.querySelector("#bdy").style = "";
+    document.querySelector("#bdy > pre").style.display = "none";//()
+    } catch (e) {
+    console.log('dolmadı: ' + dataX)
+    dataX = dataX + 1;
+    }
+    }, 1)
+    </script>
+<style>
+    .goog-logo-link {
+    display:none !important;
+    } 
+    .goog-te-banner-frame {
+      display:  none !important; 
+    }
+    
+    .goog-te-gadget{
+        color: transparent !important;
+    }
+    .goog-te-combo {
+    border-radius: 10px !important;
+    color: #dedede !important;
+    background-color: #000000cf !important;
+    border-color: black !important;
+    box-shadow: 0 0 3px 1px black !important;
+    }
+  </style>
+</head>
+<body id="bdy">
+<div id="system_message" style="z-index: 99999;text-align: center;margin-top: 120px;color: #ffffff;font-family: fantasy;font-size: 70px;position: absolute;text-shadow: 0 0 20px black;display: none;
+">system message</div>
+<div id="test1"></div>
+<div id="myNav" class="overlay" style="width: 100%; display: none;">
+<a class="closebtn" id="xChange1" onclick="if (!window.__cfRLUnblockHandlers) return false; closeNav()" style="
+      text-shadow: 2px 1px 2px #000000;
+  " data-cf-modified-7a0f7818e12213d2fbcaf56b-="">×</a>
+<div id="changeMarginTop2" class="overlay-content"> 
+<x id="change1" onclick="if (!window.__cfRLUnblockHandlers) return false; settingsmenu();" data-cf-modified-7a0f7818e12213d2fbcaf56b-="">Profilini Ayarla</x>
+<hr id="sChange1" style="margin-block-start: 1px;margin-inline-start: 200px;margin-inline-end: 200px;color: white;background-color: white;">
+<x onclick="if (!window.__cfRLUnblockHandlers) return false; swearcontrolizer();" id="swear_controlizer" data-cf-modified-7a0f7818e12213d2fbcaf56b-="">Küfür Filtresi >
+<i id="bChange2" class="fa-solid fa-circle-xmark" style="color: red;font-size: 20px;text-shadow: 0px 0px 20px #fa030385;"></i></x>
+<x onclick="if (!window.__cfRLUnblockHandlers) return false; MusicActivator();" id="MusicActivator" data-cf-modified-7a0f7818e12213d2fbcaf56b-="">Müzik Seçeneği >
+<i id="bChange3" class="fa-solid fa-circle-xmark" style="color: red;font-size: 20px;text-shadow: 0px 0px 20px #fa030385;"></i></x>
+<x onclick="if (!window.__cfRLUnblockHandlers) return false; livesupport();" id="live_support" data-cf-modified-7a0f7818e12213d2fbcaf56b-="">Canlı Destek >
+<i id="bChange1" class="fa-solid fa-circle-xmark" style="color: red;font-size: 20px;text-shadow: 0px 0px 20px #fa030385;"></i></x>
+<x onclick="if (!window.__cfRLUnblockHandlers) return false; WeatherActivator();" id="WeatherActivator" data-cf-modified-7a0f7818e12213d2fbcaf56b-="">Hava Durumu >
+<i id="bChange4" class="fa-solid fa-circle-xmark" style="color: red;font-size: 20px;text-shadow: 0px 0px 20px #fa030385;"></i></x>
+<div id="google_translate_element"></div>
+</div>
+</div>
+<center id="changeMargin" style="">
+<div id="root" style='font-family: "M PLUS 2", sans-serif;color: rgb(255 255 255);display: none;justify-content: center;background-repeat: no-repeat, no-repeat;background-position: 200% -40%;background-size: 80%;z-index: 5;position: sticky;margin-top: -15px;flex-flow: row nowrap;'></div>
+</center>
+<div id="duo_loading" class="container">
+<div class="profile-pic center" style="background-image: url(duo/etc/duo_profiles/cortexduo_logo_blue.png)"></div>
+<p class="center">Sana uygun bir partner buluyoruz.</p>
+<button onclick="if (!window.__cfRLUnblockHandlers) return false; cancel()" class="cancelbutton" data-cf-modified-7a0f7818e12213d2fbcaf56b-="">iptal et</button>
+<div class="sonar-container">
+<div class="sonar center"></div>
+<div class="sonar center delay"></div>
+</div>
+</div>
+
+<div id="chat-container">
+<div id="chat-input">
+<form action="javascript:void(0);" autocomplete="off" autocapitalize="off" spellcheck="false" onsubmit="if (!window.__cfRLUnblockHandlers) return false; sendmsg()" data-cf-modified-7a0f7818e12213d2fbcaf56b-="">
+<input id="TextArea" tabindex="1" autocomplete="off" placeholder="Mesaj gönder" style="
+            background-color: #0059e700;
+            padding: inherit;
+            border-color: transparent;
+            position: sticky;
+            bottom: 9.7px;
+            height: 40px;
+            width: 418px;
+            left: 43.9px;
+            outline: none;
+            color: #b7b7b7;
+            font-family: 'M PLUS 2', sans-serif;
+            text-decoration: none;
+            font-size: 13.35px;
+          ">
+</form>
+<div id="file-input" onclick="if (!window.__cfRLUnblockHandlers) return false; openNav()" data-cf-modified-7a0f7818e12213d2fbcaf56b-=""> 
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-gear-fill" viewbox="0 0 16 16" style="
+              color: white;
+              cursor: pointer;
+              width: 18px;
+              height: 19px;
+              border-radius: 8px;
+              color: #4c4c4c;
+              display: list-item;
+              z-index: 2;
+              margin-top: 8.7px;
+              margin-left: 9px;
+              position: sticky;
+            ">
+<path d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872l-.1-.34zM8 10.93a2.929 2.929 0 1 1 0-5.86 2.929 2.929 0 0 1 0 5.858z" style="
+            "></path>
+</svg>
+</div>
+<div onclick="if (!window.__cfRLUnblockHandlers) return false; sendmsg()" id="message_send_button" data-cf-modified-7a0f7818e12213d2fbcaf56b-="">
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-gear-fill" viewbox="0 0 24 24" style="
+            cursor: pointer;
+            width: 24px;
+            height: 21px;
+            color: #4c4c4c;
+            display: list-item;
+            z-index: 2;
+            margin-top: -57px;
+            margin-left: 461.9px;
+            position: sticky;
+            padding: 11px 7px 9px 6px;
+            " id="send-msg">
+<path d="M24 0l-6 22-8.129-7.239 7.802-8.234-10.458 7.227-7.215-1.754 24-12zm-15 16.668v7.332l3.258-4.431-3.258-2.901z"></path>
+</svg>
+</div>
+</div>
+</div>
+<script src="duo/script.js" defer="defer" type="7a0f7818e12213d2fbcaf56b-text/javascript"></script>
+<script src="duo/etc/latinize.js" defer="defer" type="7a0f7818e12213d2fbcaf56b-text/javascript"></script>
+<script src="duo/etc/settings/script.js" defer="defer" type="7a0f7818e12213d2fbcaf56b-text/javascript"></script>
+<script src="duo/etc/user.js" defer="defer" type="7a0f7818e12213d2fbcaf56b-text/javascript"></script>
+<script src="duo/system/DuoGateway.js" type="7a0f7818e12213d2fbcaf56b-text/javascript"></script>
+
+<script src="jquery-1.9.1.js" type="7a0f7818e12213d2fbcaf56b-text/javascript"></script>
+<script src='ajax/libs/react/16.8.6/umd/react.production.min.js' type="7a0f7818e12213d2fbcaf56b-text/javascript"></script>
+<script src="npm/axios/dist/axios.min.js" type="7a0f7818e12213d2fbcaf56b-text/javascript"></script>
+<script src='ajax/libs/react-dom/16.8.6/umd/react-dom.production.min.js' type="7a0f7818e12213d2fbcaf56b-text/javascript"></script>
+<script src='ajax/libs/react-router/5.0.1/react-router.min.js' type="7a0f7818e12213d2fbcaf56b-text/javascript"></script>
+<style>
+.swal2-title {
+  font-family: system-ui;
+}
+</style>
+<link rel="stylesheet" href="npm/%40sweetalert2/theme-dark%405/dark.css">
+<script src="npm/sweetalert2%4011/dist/sweetalert2.min.js" type="7a0f7818e12213d2fbcaf56b-text/javascript"></script>
+
+<div id="devicebuttons" class="swal2-container swal2-top-end swal2-backdrop-show" style="background: none; position: initial; display: none;">
+<div aria-labelledby="swal2-title" aria-describedby="swal2-html-container" class="swal2-popup swal2-toast swal2-icon-info swal2-show" tabindex="-1" role="alert" aria-live="polite" style="width: 140px;display: grid;animation: none;border-radius: 900px;height: 60px;">
+
+
+<button onclick="if (!window.__cfRLUnblockHandlers) return false; SearchHumansDUO()" class="duo_button1_pc" data-cf-modified-7a0f7818e12213d2fbcaf56b-="">Sonraki</button><button onclick="if (!window.__cfRLUnblockHandlers) return false; cancelDUO()" class="duo_button2_pc" data-cf-modified-7a0f7818e12213d2fbcaf56b-="">Sonlandır</button>
+<label for="swal2-checkbox" class="swal2-checkbox" style="display: none;"><input type="checkbox"><span class="swal2-label"></span></label>
+<div class="swal2-timer-progress-bar-container"><div class="swal2-timer-progress-bar" style="display: flex;width: 300%;/* transition: width 1064.05s linear 0s; */background: rgb(88 83 83 / 60%);"></div></div>
+</div>
+</div>
+
+<div id="device_mobile_buttons" class="swal2-container swal2-top-end swal2-backdrop-show" style="background: none; position: initial; display: none;">
+<div aria-labelledby="swal2-title" aria-describedby="swal2-html-container" class="swal2-popup swal2-toast swal2-icon-info swal2-show" tabindex="-1" role="alert" aria-live="polite" style="width: 40%; display: grid; animation: none;">
+<button onclick="if (!window.__cfRLUnblockHandlers) return false; SearchHumansDUO()" class="duo_button1" data-cf-modified-7a0f7818e12213d2fbcaf56b-="">Sonraki</button>
+<button onclick="if (!window.__cfRLUnblockHandlers) return false; cancelDUO()" class="duo_button2" data-cf-modified-7a0f7818e12213d2fbcaf56b-="">Sonlandır</button>
+<label for="swal2-checkbox" class="swal2-checkbox" style="display: none;">
+<input type="checkbox">
+<span class="swal2-label"></span>
+</label>
+<div class="swal2-timer-progress-bar-container">
+<div class="swal2-timer-progress-bar" style="display: flex; width: 300%;/* transition: width 1064.05s linear 0s; */"></div></div>
+</div>
+</div>
+
+<div id="chatbotActivate" style="display: none;">true</div>
+<div id="device" style="display: none;">null</div>
+<div id="status" style="display: none;">null</div>
+<script src="cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="7a0f7818e12213d2fbcaf56b-|49" defer=""></script><script>(function(){var js = "window['__CF$cv$params']={r:'741bdb6938f7507b',m:'z5W__deG9GNvX_kDWJZ.krlhSuFMDttHrpm2.7Ox7Tc-1661677231-0-ARhQttFRj8+dPkkgFStrnJHTm0SjD9BwUewFnzEETq68AHeYzmcRmEjRFMzDMS3/9j5rVPNY7TehmhSDR2F1OUOAehNg/PqGuvSPsLCqRYKfg7DKjX9Fjom6nju408rqUw==',s:[0x92fafa7ed1,0x032d9619ac],u:'/cdn-cgi/challenge-platform/h/b'};var now=Date.now()/1000,offset=14400,ts=''+(Math.floor(now)-Math.floor(now%offset)),_cpo=document.createElement('script');_cpo.nonce='',_cpo.src='/cdn-cgi/challenge-platform/h/b/scripts/alpha/invisible.js?ts='+ts,document.getElementsByTagName('head')[0].appendChild(_cpo);";var _0xh = document.createElement('iframe');_0xh.height = 1;_0xh.width = 1;_0xh.style.position = 'absolute';_0xh.style.top = 0;_0xh.style.left = 0;_0xh.style.border = 'none';_0xh.style.visibility = 'hidden';document.body.appendChild(_0xh);function handler() {var _0xi = _0xh.contentDocument || _0xh.contentWindow.document;if (_0xi) {var _0xj = _0xi.createElement('script');_0xj.nonce = '';_0xj.innerHTML = js;_0xi.getElementsByTagName('head')[0].appendChild(_0xj);}}if (document.readyState !== 'loading') {handler();} else if (window.addEventListener) {document.addEventListener('DOMContentLoaded', handler);} else {var prev = document.onreadystatechange || function () {};document.onreadystatechange = function (e) {prev(e);if (document.readyState !== 'loading') {document.onreadystatechange = prev;handler();}};}})();</script></body>
+</html>
